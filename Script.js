@@ -1,138 +1,338 @@
-// 1. Typewriter Effect (Hero Section ke liye)
-const textElement = document.querySelector(".hero p");
-const text = "Web Developer | Programmer | Content Creator";
-let index = 0;
+// ===============================
+// MOBILE NAVBAR
+// ===============================
 
-function typeWriter() {
-    if (index < text.length) {
-        textElement.innerHTML = text.substring(0, index + 1) + '<span class="cursor">|</span>';
-        index++;
-        setTimeout(typeWriter, 100);
+const menuIcon = document.getElementById("menu-icon");
+const navbar = document.querySelector(".navbar");
+
+menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+
+    const icon = menuIcon.querySelector("i");
+
+    if (navbar.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
     }
+});
+
+
+// Close mobile menu when clicking a link
+
+document.querySelectorAll(".navbar a").forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        navbar.classList.remove("active");
+
+        const icon = menuIcon.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+    });
+
+});
+
+
+// ===============================
+// DARK / LIGHT MODE
+// ===============================
+
+const themeButton = document.getElementById("theme-btn");
+
+themeButton.addEventListener("click", () => {
+
+    document.body.classList.toggle("light-theme");
+
+    const icon = themeButton.querySelector("i");
+
+    if (document.body.classList.contains("light-theme")) {
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+        localStorage.setItem("theme", "light");
+
+    } else {
+
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+
+        localStorage.setItem("theme", "dark");
+
+    }
+
+});
+
+
+// Load saved theme
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "light") {
+
+        document.body.classList.add("light-theme");
+
+        const icon = themeButton.querySelector("i");
+
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+    }
+
+});
+
+
+// ===============================
+// TYPING ANIMATION
+// ===============================
+
+const typingText = document.getElementById("typing-text");
+
+const words = [
+    "BCA Student",
+    "Web Developer",
+    "AI Learner",
+    "App Developer",
+    "Content Creator"
+];
+
+let wordIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+
+function typeEffect() {
+
+    const currentWord = words[wordIndex];
+
+    if (!isDeleting) {
+
+        typingText.textContent =
+            currentWord.substring(0, charIndex + 1);
+
+        charIndex++;
+
+        if (charIndex === currentWord.length) {
+
+            isDeleting = true;
+
+            setTimeout(typeEffect, 1500);
+
+            return;
+        }
+
+    } else {
+
+        typingText.textContent =
+            currentWord.substring(0, charIndex - 1);
+
+        charIndex--;
+
+        if (charIndex === 0) {
+
+            isDeleting = false;
+
+            wordIndex++;
+
+            if (wordIndex === words.length) {
+                wordIndex = 0;
+            }
+
+        }
+
+    }
+
+    const speed = isDeleting ? 50 : 100;
+
+    setTimeout(typeEffect, speed);
+
 }
 
-// 2. Sticky Header Animation
-window.addEventListener("scroll", function() {
-    const header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-});
 
-// 3. Smooth Scroll for Navigation
-document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+typeEffect();
 
-// Window load hone par typewriter start karein
-window.onload = typeWriter;
-// 4. Responsive Navigation Toggle
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector("nav ul");   
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("nav-open");
-}); 
-// 5. Highlight Active Section in Navigation
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav a");        
+
+// ===============================
+// HEADER SCROLL EFFECT
+// ===============================
+
+const header = document.querySelector(".header");
+
 window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 60) {
-            current = section.getAttribute("id");
-        }
-    });
-    navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
-        }
-    });
-});
-// 6. Back to Top Button
-const backToTopButton = document.querySelector(".back-to-top");
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-        backToTopButton.classList.add("show");
+
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
     } else {
-        backToTopButton.classList.remove("show");
-    }           
+        header.classList.remove("scrolled");
+    }
+
 });
-backToTopButton.addEventListener("click", () => {
+
+
+// ===============================
+// SCROLL TO TOP
+// ===============================
+
+const scrollTopButton =
+    document.getElementById("scroll-top");
+
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 400) {
+        scrollTopButton.classList.add("show");
+    } else {
+        scrollTopButton.classList.remove("show");
+    }
+
+});
+
+
+scrollTopButton.addEventListener("click", () => {
+
     window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: "smooth"
     });
-});
-// 7. Dark Mode Toggle
-const darkModeToggle = document.querySelector(".dark-mode-toggle");
-darkModeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-}
-);  
-// 8. Form Validation (Contact Section ke liye)
-const contactForm = document.querySelector("#contact-form");
 
-contactForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-    const name = contactForm.querySelector("input[name='name']").value;
-    const email = contactForm.querySelector("input[name='email']").value;
-    const message = contactForm.querySelector("textarea[name='message']").value;
-    let valid = true;   
-    if (name === "") {
-        valid = false;
-        alert("Please enter your name.");
-    }       
-    if (email === "" || !email.includes("@")) {
-        valid = false;
-        alert("Please enter a valid email.");
-    }
-    if (message === "") {
-        valid = false;
-        alert("Please enter your message.");
-    }   
-    if (valid) {
-        alert("Form submitted successfully!");
-        contactForm.reset();
-    }
-});
-// 9. Image Gallery Lightbox (Portfolio Section ke liye)
-const galleryImages = document.querySelectorAll(".gallery img");
-const lightbox = document.createElement("div");
-lightbox.id = "lightbox";
-document.body.appendChild(lightbox);
-
-galleryImages.forEach(image => {
-    image.addEventListener("click", () => {
-        lightbox.classList.add("active");   
-        const img = document.createElement("img");
-        img.src = image.src;
-        while (lightbox.firstChild) {
-            lightbox.removeChild(lightbox.firstChild);
-        }
-        lightbox.appendChild(img);
-    });
 });
 
-lightbox.addEventListener("click", () => {
-    lightbox.classList.remove("active");
-}); 
-// 10. Scroll Reveal Animations
-const revealElements = document.querySelectorAll(".reveal");    
+
+// ===============================
+// ACTIVE NAVIGATION LINK
+// ===============================
+
+const sections =
+    document.querySelectorAll("section");
+
+const navLinks =
+    document.querySelectorAll(".navbar a");
+
+
 window.addEventListener("scroll", () => {
-    const windowHeight = window.innerHeight;    
-    revealElements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        if (elementTop < windowHeight - 100) {
-            element.classList.add("active");
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop =
+            section.offsetTop - 150;
+
+        const sectionHeight =
+            section.offsetHeight;
+
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY <
+            sectionTop + sectionHeight
+        ) {
+            current = section.getAttribute("id");
         }
+
     });
+
+
+    navLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (
+            link.getAttribute("href") ===
+            "#" + current
+        ) {
+            link.classList.add("active");
+        }
+
+    });
+
 });
 
-// Initial check for reveal elements on page load
-window.dispatchEvent(new Event('scroll'));
+
+// ===============================
+// CONTACT FORM
+// ===============================
+
+const contactForm =
+    document.getElementById("contact-form");
+
+const formMessage =
+    document.getElementById("form-message");
+
+
+contactForm.addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    formMessage.textContent =
+        `Thank you, ${name}! Your message has been received. 🚀`;
+
+    contactForm.reset();
+
+});
+
+
+// ===============================
+// CURRENT YEAR
+// ===============================
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+
+// ===============================
+// SIMPLE SCROLL REVEAL
+// ===============================
+
+const revealElements =
+    document.querySelectorAll(
+        ".skill-card, .journey-card, .project-card, .about-content, .contact-info"
+    );
+
+
+const revealOnScroll = () => {
+
+    const windowHeight =
+        window.innerHeight;
+
+    revealElements.forEach(element => {
+
+        const elementTop =
+            element.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 80) {
+
+            element.style.opacity = "1";
+            element.style.transform = "translateY(0)";
+
+        }
+
+    });
+
+};
+
+
+// Initial styles
+
+revealElements.forEach(element => {
+
+    element.style.opacity = "0";
+    element.style.transform = "translateY(30px)";
+    element.style.transition =
+        "opacity 0.6s ease, transform 0.6s ease";
+
+});
+
+
+window.addEventListener("scroll", revealOnScroll);
+
+revealOnScroll();
