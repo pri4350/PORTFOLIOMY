@@ -4,541 +4,1120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Priyanka | Portfolio</title>
+    <title>Priyanka | BCA Student & Developer</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+        content="Priyanka's portfolio - BCA student, web developer, Python learner, AI enthusiast and app development creator.">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <!-- Google Fonts -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
         rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
-    <header class="header">
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar" id="navbar">
+
+    <div class="nav-container">
+
         <a href="#home" class="logo">
+            <span class="logo-leaf">✿</span>
             Priyanka<span>.</span>
         </a>
 
-        <nav class="navbar">
+        <nav class="nav-links" id="navLinks">
+
             <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
             <a href="#journey">Journey</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#youtube">YouTube</a>
+            <a href="#certificates">Certificates</a>
             <a href="#contact">Contact</a>
+
         </nav>
 
-        <div class="header-icons">
-            <button id="theme-btn" aria-label="Toggle Theme">
-                <i class="fa-solid fa-moon"></i>
-            </button>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-            <div id="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+    </div>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-bg-circle circle-one"></div>
+    <div class="hero-bg-circle circle-two"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content reveal">
+
+            <div class="hello-badge">
+                <span>🌱</span>
+                Growing one project at a time
             </div>
-        </div>
-    </header>
 
-
-    <!-- ================= HOME ================= -->
-    <section class="home" id="home">
-
-        <div class="home-content">
-
-            <p class="hello">HELLO, I'M</p>
-
-            <h1>Priyanka</h1>
-
-            <h3>
-                I'm a
-                <span id="typing-text"></span>
-            </h3>
-
-            <p class="home-description">
-                I am a BCA student and aspiring developer passionate about
-                Web Development, Artificial Intelligence and App Development.
-                I love learning new technologies and sharing my journey online.
+            <p class="small-heading">
+                HELLO, I'M
             </p>
 
-            <div class="home-buttons">
-                <a href="#projects" class="btn">
-                    View My Work
+            <h1>
+                Priyanka
+                <span>Chandrashekhar Bhole</span>
+            </h1>
+
+            <h2>
+                BCA Student <span>•</span> Developer <span>•</span> AI Learner
+            </h2>
+
+            <p class="hero-description">
+                I'm a BCA student at
+                <strong>G H Raisoni SkillTech University, Nagpur</strong>.
+                My journey in technology has been wonderfully full of
+                learning, creating, experimenting and growing.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn primary-btn">
+                    Explore My Work
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
-                <a href="#contact" class="btn btn-outline">
-                    Contact Me
+                <a href="#journey" class="btn secondary-btn">
+                    My Journey
                 </a>
+
             </div>
 
-            <div class="social-icons">
-                <!-- Replace # with your actual links -->
-                <a href="#" aria-label="GitHub">
+            <div class="quick-links">
+
+                <a href="YOUR_GITHUB_LINK" target="_blank">
                     <i class="fa-brands fa-github"></i>
+                    GitHub
                 </a>
 
-                <a href="#" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
+                <a href="YOUR_LINKEDIN_LINK" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
                 </a>
 
-                <a href="#" aria-label="YouTube">
+                <a href="YOUR_YOUTUBE_LINK" target="_blank">
                     <i class="fa-brands fa-youtube"></i>
+                    YouTube
                 </a>
 
-                <a href="#" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
             </div>
 
         </div>
 
 
         <!-- Hero Card -->
-        <div class="home-image">
 
-            <div class="image-glow"></div>
+        <div class="hero-card-wrapper reveal">
 
-            <div class="developer-card">
+            <div class="hero-card">
 
                 <div class="card-top">
-                    <div class="card-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <span class="status-dot"></span>
+                    Currently learning & building
+                </div>
+
+                <div class="code-window">
+
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>my_journey.py</span>
+                    </div>
+
+                    <div class="code-content">
+
+                        <p>
+                            <span class="purple">name</span>
+                            =
+                            <span class="green">"Priyanka"</span>
+                        </p>
+
+                        <p>
+                            <span class="purple">education</span>
+                            =
+                            <span class="green">"BCA"</span>
+                        </p>
+
+                        <p>
+                            <span class="purple">passion</span>
+                            =
+                            <span class="green">"Technology"</span>
+                        </p>
+
+                        <p>
+                            <span class="purple">goal</span>
+                            =
+                            <span class="green">"Keep Growing"</span>
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <span class="blue">while</span>
+                            <span class="yellow">True</span>:
+                        </p>
+
+                        <p class="indent">
+                            learn()
+                        </p>
+
+                        <p class="indent">
+                            build()
+                        </p>
+
+                        <p class="indent">
+                            grow()
+                        </p>
+
+                        <p class="cursor-line">
+                            <span>_</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="growth-note">
+                    <span>🌿</span>
+                    <div>
+                        <strong>Learning in progress</strong>
+                        <small>Web • Python • AI • Apps</small>
                     </div>
                 </div>
 
-                <div class="code-content">
-
-                    <p><span class="purple">const</span> developer = {</p>
-
-                    <p>
-                        &nbsp;&nbsp;name:
-                        <span class="green">"Priyanka"</span>,
-                    </p>
-
-                    <p>
-                        &nbsp;&nbsp;role:
-                        <span class="green">"BCA Student"</span>,
-                    </p>
-
-                    <p>
-                        &nbsp;&nbsp;learning:
-                        [
-                    </p>
-
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class="green">"Web Development"</span>,
-                    </p>
-
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class="green">"Artificial Intelligence"</span>,
-                    </p>
-
-                    <p>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        <span class="green">"App Development"</span>
-                    </p>
-
-                    <p>&nbsp;&nbsp;],</p>
-
-                    <p>
-                        &nbsp;&nbsp;status:
-                        <span class="green">"Learning & Building 🚀"</span>
-                    </p>
-
-                    <p>};</p>
-
-                </div>
-
-            </div>
-
-            <div class="floating-card card-one">
-                <i class="fa-solid fa-code"></i>
-                <span>Web Developer</span>
-            </div>
-
-            <div class="floating-card card-two">
-                <i class="fa-solid fa-robot"></i>
-                <span>AI Learner</span>
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+    <div class="scroll-down">
+        <span>Scroll to explore</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+</section>
 
 
-    <!-- ================= ABOUT ================= -->
-    <section class="about" id="about">
+<!-- ================= ABOUT ================= -->
 
-        <div class="section-heading">
-            <p>GET TO KNOW ME</p>
-            <h2>About <span>Me</span></h2>
+<section class="about section" id="about">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-label">A LITTLE ABOUT ME</p>
+
+            <h2>
+                Learning with curiosity,
+                <span>creating with heart.</span>
+            </h2>
+
         </div>
 
-        <div class="about-container">
 
-            <div class="about-image">
-                <!-- Add your image here later -->
-                <div class="profile-placeholder">
-                    <i class="fa-solid fa-user"></i>
-                    <span>Your Photo</span>
-                </div>
-            </div>
+        <div class="about-grid">
 
-            <div class="about-content">
-
-                <h3>
-                    Building my future, one line of code at a time.
-                </h3>
+            <div class="about-text reveal">
 
                 <p>
-                    Hi! I'm Priyanka, a BCA student who is passionate about
-                    technology and software development. I enjoy exploring
-                    new technologies, building projects and improving my
-                    programming skills every day.
+                    My journey in technology started with curiosity.
+                    I began exploring web development and slowly turned
+                    that curiosity into projects, skills and certifications.
                 </p>
 
                 <p>
-                    Currently, I am learning Web Development with AI,
-                    Artificial Intelligence and App Development. My goal is
-                    to become a skilled developer and build meaningful
-                    technology that solves real-world problems.
+                    From creating frontend projects with HTML, CSS and
+                    JavaScript to learning Python, AI and app development,
+                    every step has taught me something new.
                 </p>
 
-                <div class="about-info">
+                <p>
+                    I'm still learning backend development and getting
+                    ready to start my internship journey. I believe
+                    growth doesn't happen overnight — it happens
+                    project by project.
+                </p>
 
-                    <div class="info-box">
-                        <i class="fa-solid fa-graduation-cap"></i>
-
-                        <div>
-                            <h4>Education</h4>
-                            <p>BCA Student</p>
-                        </div>
-                    </div>
-
-                    <div class="info-box">
-                        <i class="fa-solid fa-location-dot"></i>
-
-                        <div>
-                            <h4>Location</h4>
-                            <p>India</p>
-                        </div>
-                    </div>
-
-                    <div class="info-box">
-                        <i class="fa-solid fa-heart"></i>
-
-                        <div>
-                            <h4>Interests</h4>
-                            <p>Technology & Content Creation</p>
-                        </div>
-                    </div>
-
-                    <div class="info-box">
-                        <i class="fa-solid fa-laptop-code"></i>
-
-                        <div>
-                            <h4>Focus</h4>
-                            <p>Learning & Building</p>
-                        </div>
-                    </div>
-
+                <div class="quote-box">
+                    <span>“</span>
+                    <p>
+                        Keep learning. Keep creating.
+                        Keep becoming a better version of yourself.
+                    </p>
                 </div>
 
-                <a href="#contact" class="btn">
-                    Let's Connect
-                </a>
+            </div>
+
+
+            <div class="about-stats reveal">
+
+                <div class="stat-card">
+                    <span class="stat-icon">🎓</span>
+                    <strong>BCA</strong>
+                    <small>Student</small>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">💻</span>
+                    <strong>Web</strong>
+                    <small>Development</small>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">🐍</span>
+                    <strong>Python</strong>
+                    <small>Certified</small>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-icon">🤖</span>
+                    <strong>AI</strong>
+                    <small>Learning</small>
+                </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= SKILLS ================= -->
-    <section class="skills" id="skills">
+<!-- ================= JOURNEY ================= -->
 
-        <div class="section-heading">
-            <p>MY SKILLS</p>
-            <h2>Technologies I'm <span>Learning</span></h2>
+<section class="journey section" id="journey">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <p class="section-label">MY JOURNEY</p>
+
+            <h2>
+                From curiosity to
+                <span>creation.</span>
+            </h2>
+
+            <p>
+                Every step is a small part of my bigger story.
+            </p>
+
         </div>
 
-        <div class="skills-container">
 
-            <div class="skill-card">
+        <div class="timeline">
+
+            <!-- Item 1 -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot">
+                    01
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-tag">
+                        START
+                    </span>
+
+                    <h3>
+                        My BCA Journey
+                    </h3>
+
+                    <p>
+                        Started my BCA journey at
+                        <strong>
+                            G H Raisoni SkillTech University, Nagpur
+                        </strong>
+                        and began exploring the world of technology.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 2 -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot">
+                    02
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-tag">
+                        PYTHON
+                    </span>
+
+                    <h3>
+                        Learning Python
+                    </h3>
+
+                    <p>
+                        Completed a Python course and earned
+                        certification while building my programming
+                        foundation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 3 -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot">
+                    03
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-tag">
+                        WEB
+                    </span>
+
+                    <h3>
+                        Started Web Development
+                    </h3>
+
+                    <p>
+                        Started creating websites and frontend projects
+                        using HTML, CSS and JavaScript.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 4 -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot">
+                    04
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-tag">
+                        BUILDING
+                    </span>
+
+                    <h3>
+                        Projects & Experiments
+                    </h3>
+
+                    <p>
+                        Created projects like Snake Game, To-Do List,
+                        Notes, Timer, Travel Watch and Mini Chart
+                        Portfolio.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 5 -->
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-dot">
+                    05
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-tag">
+                        AI + APP
+                    </span>
+
+                    <h3>
+                        Exploring AI & App Development
+                    </h3>
+
+                    <p>
+                        Expanded my learning into AI development,
+                        React and app development while working on
+                        my own creations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Item 6 -->
+
+            <div class="timeline-item upcoming reveal">
+
+                <div class="timeline-dot">
+                    06
+                </div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-tag">
+                        NEXT CHAPTER
+                    </span>
+
+                    <h3>
+                        Internship — Coming Soon 🚀
+                    </h3>
+
+                    <p>
+                        My internship journey is about to begin.
+                        More learning, real-world experience and
+                        new certifications are waiting ahead.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="skills section" id="skills">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <p class="section-label">WHAT I WORK WITH</p>
+
+            <h2>
+                Skills I'm
+                <span>growing.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+
                 <div class="skill-icon html">
                     <i class="fa-brands fa-html5"></i>
                 </div>
 
-                <h3>HTML5</h3>
-                <p>Creating structured and semantic websites.</p>
+                <h3>HTML</h3>
+
+                <p>
+                    Building structured and accessible web pages.
+                </p>
+
+                <div class="skill-bar">
+                    <span style="width: 90%;"></span>
+                </div>
+
             </div>
 
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
+
                 <div class="skill-icon css">
                     <i class="fa-brands fa-css3-alt"></i>
                 </div>
 
-                <h3>CSS3</h3>
-                <p>Designing responsive and modern user interfaces.</p>
+                <h3>CSS</h3>
+
+                <p>
+                    Creating responsive and beautiful interfaces.
+                </p>
+
+                <div class="skill-bar">
+                    <span style="width: 85%;"></span>
+                </div>
+
             </div>
 
 
-            <div class="skill-card">
-                <div class="skill-icon javascript">
+            <div class="skill-card reveal">
+
+                <div class="skill-icon js">
                     <i class="fa-brands fa-js"></i>
                 </div>
 
                 <h3>JavaScript</h3>
-                <p>Adding interactivity and functionality to websites.</p>
+
+                <p>
+                    Adding interaction and functionality to websites.
+                </p>
+
+                <div class="skill-bar">
+                    <span style="width: 75%;"></span>
+                </div>
+
             </div>
 
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
+
                 <div class="skill-icon python">
                     <i class="fa-brands fa-python"></i>
                 </div>
 
                 <h3>Python</h3>
-                <p>Learning programming, AI and data-related concepts.</p>
+
+                <p>
+                    Programming, automation and AI development.
+                </p>
+
+                <div class="skill-bar">
+                    <span style="width: 82%;"></span>
+                </div>
+
             </div>
 
 
-            <div class="skill-card">
+            <div class="skill-card reveal">
+
+                <div class="skill-icon react">
+                    <i class="fa-brands fa-react"></i>
+                </div>
+
+                <h3>React</h3>
+
+                <p>
+                    Learning modern component-based development.
+                </p>
+
+                <div class="skill-bar">
+                    <span style="width: 65%;"></span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card reveal">
+
                 <div class="skill-icon ai">
-                    <i class="fa-solid fa-brain"></i>
+                    🤖
                 </div>
 
-                <h3>Artificial Intelligence</h3>
-                <p>Exploring AI concepts, tools and practical projects.</p>
-            </div>
+                <h3>AI Development</h3>
 
+                <p>
+                    Exploring AI and intelligent applications.
+                </p>
 
-            <div class="skill-card">
-                <div class="skill-icon mobile">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+                <div class="skill-bar">
+                    <span style="width: 60%;"></span>
                 </div>
 
-                <h3>App Development</h3>
-                <p>Learning how modern mobile applications are built.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= JOURNEY ================= -->
-    <section class="journey" id="journey">
-
-        <div class="section-heading">
-            <p>MY LEARNING PATH</p>
-            <h2>Learning <span>Journey</span></h2>
-        </div>
-
-        <div class="journey-container">
-
-            <div class="journey-card">
-                <div class="journey-number">01</div>
-
-                <i class="fa-solid fa-code"></i>
-
-                <h3>Web Development with AI</h3>
-
-                <p>
-                    Learning HTML, CSS and JavaScript while exploring how
-                    Artificial Intelligence can help developers build
-                    better and smarter web applications.
-                </p>
-
-                <span class="status learning">
-                    <i class="fa-solid fa-spinner"></i>
-                    Learning
-                </span>
             </div>
 
 
-            <div class="journey-card">
-                <div class="journey-number">02</div>
+            <div class="skill-card reveal">
 
-                <i class="fa-solid fa-robot"></i>
-
-                <h3>AI Full Course</h3>
-
-                <p>
-                    Exploring Artificial Intelligence from fundamentals to
-                    practical applications, tools, concepts and projects.
-                </p>
-
-                <span class="status learning">
-                    <i class="fa-solid fa-spinner"></i>
-                    Learning
-                </span>
-            </div>
-
-
-            <div class="journey-card">
-                <div class="journey-number">03</div>
-
-                <i class="fa-solid fa-mobile-screen"></i>
+                <div class="skill-icon app">
+                    📱
+                </div>
 
                 <h3>App Development</h3>
 
                 <p>
-                    Learning the fundamentals of mobile application
-                    development and exploring how apps are designed
-                    and developed.
+                    Turning ideas into useful application concepts.
                 </p>
 
-                <span class="status upcoming">
-                    <i class="fa-solid fa-clock"></i>
-                    Exploring
-                </span>
+                <div class="skill-bar">
+                    <span style="width: 60%;"></span>
+                </div>
+
+            </div>
+
+
+            <div class="skill-card learning reveal">
+
+                <div class="skill-icon backend">
+                    ⚙️
+                </div>
+
+                <h3>Backend</h3>
+
+                <p>
+                    Currently learning backend development.
+                </p>
+
+                <div class="learning-label">
+                    Currently Learning
+                </div>
+
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= PROJECTS ================= -->
-    <section class="projects" id="projects">
+<!-- ================= PROJECTS ================= -->
 
-        <div class="section-heading">
-            <p>MY WORK</p>
-            <h2>Featured <span>Projects</span></h2>
+<section class="projects section" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading reveal">
+
+            <p class="section-label">MY CREATIONS</p>
+
+            <h2>
+                Projects that
+                <span>tell my story.</span>
+            </h2>
+
+            <p>
+                Small ideas, real projects and lots of learning.
+            </p>
+
         </div>
 
-        <div class="projects-container">
 
-            <!-- Project 1 -->
-            <div class="project-card">
+        <div class="projects-grid">
 
-                <div class="project-image gradient-one">
-                    <i class="fa-solid fa-user"></i>
-                </div>
 
-                <div class="project-content">
+            <!-- Snake Game -->
 
-                    <div class="project-title">
-                        <h3>Personal Portfolio</h3>
+            <article class="project-card featured reveal">
 
-                        <div>
-                            <a href="#" title="GitHub">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
+                <div class="project-visual snake-visual">
 
-                            <a href="#" title="Live Demo">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
+                    <div class="snake-screen">
+
+                        <span class="snake-block s1"></span>
+                        <span class="snake-block s2"></span>
+                        <span class="snake-block s3"></span>
+                        <span class="snake-block s4"></span>
+
+                        <span class="food">🍎</span>
+
                     </div>
 
+                    <span class="project-number">01</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        FRONTEND
+                    </span>
+
+                    <h3>Snake Game</h3>
+
                     <p>
-                        A responsive personal portfolio website created using
+                        A browser-based Snake Game built using
                         HTML, CSS and JavaScript.
                     </p>
 
-                    <div class="project-tags">
+                    <div class="project-tech">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>JavaScript</span>
                     </div>
 
+                    <a href="YOUR_SNAKE_PROJECT_LINK"
+                        target="_blank"
+                        class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
                 </div>
+
+            </article>
+
+
+            <!-- To Do -->
+
+            <article class="project-card reveal">
+
+                <div class="project-visual todo-visual">
+
+                    <div class="todo-preview">
+
+                        <div class="todo-title">
+                            My Tasks
+                        </div>
+
+                        <div class="todo-row">
+                            <span>✓</span>
+                            Learn JavaScript
+                        </div>
+
+                        <div class="todo-row">
+                            <span>✓</span>
+                            Build Project
+                        </div>
+
+                        <div class="todo-row pending">
+                            <span>○</span>
+                            Learn Backend
+                        </div>
+
+                    </div>
+
+                    <span class="project-number">02</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        FRONTEND
+                    </span>
+
+                    <h3>To-Do List</h3>
+
+                    <p>
+                        A simple productivity project created
+                        with HTML, CSS and JavaScript.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+
+                    <a href="YOUR_TODO_PROJECT_LINK"
+                        target="_blank"
+                        class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Notes -->
+
+            <article class="project-card reveal">
+
+                <div class="project-visual notes-visual">
+
+                    <div class="notes-preview">
+
+                        <div class="note-line long"></div>
+                        <div class="note-line"></div>
+                        <div class="note-line medium"></div>
+
+                        <div class="note-paper">
+                            📝 My Notes
+                        </div>
+
+                    </div>
+
+                    <span class="project-number">03</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        PRODUCTIVITY
+                    </span>
+
+                    <h3>Notes</h3>
+
+                    <p>
+                        A clean notes concept designed to make
+                        everyday learning and organization easier.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="YOUR_NOTES_PROJECT_LINK"
+                        target="_blank"
+                        class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Timer -->
+
+            <article class="project-card reveal">
+
+                <div class="project-visual timer-visual">
+
+                    <div class="timer-preview">
+                        <span>25:00</span>
+                        <small>FOCUS TIME</small>
+                        <button>START</button>
+                    </div>
+
+                    <span class="project-number">04</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        PRODUCTIVITY
+                    </span>
+
+                    <h3>Focus Timer</h3>
+
+                    <p>
+                        A minimal timer project created for
+                        focused study sessions.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="YOUR_TIMER_PROJECT_LINK"
+                        target="_blank"
+                        class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Travel Watch -->
+
+            <article class="project-card reveal">
+
+                <div class="project-visual travel-visual">
+
+                    <div class="travel-preview">
+
+                        <span>🌍</span>
+
+                        <strong>
+                            TRAVEL WATCH
+                        </strong>
+
+                        <small>
+                            Explore • Time • Travel
+                        </small>
+
+                    </div>
+
+                    <span class="project-number">05</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        WEB PROJECT
+                    </span>
+
+                    <h3>Travel Watch</h3>
+
+                    <p>
+                        A travel-inspired web project exploring
+                        places, time and beautiful interfaces.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+
+                    <a href="YOUR_TRAVEL_PROJECT_LINK"
+                        target="_blank"
+                        class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Chart -->
+
+            <article class="project-card reveal">
+
+                <div class="project-visual chart-visual">
+
+                    <div class="chart-preview">
+
+                        <div class="chart-bars">
+                            <span style="height: 40%;"></span>
+                            <span style="height: 65%;"></span>
+                            <span style="height: 50%;"></span>
+                            <span style="height: 80%;"></span>
+                            <span style="height: 95%;"></span>
+                        </div>
+
+                    </div>
+
+                    <span class="project-number">06</span>
+
+                </div>
+
+                <div class="project-info">
+
+                    <span class="project-category">
+                        DATA UI
+                    </span>
+
+                    <h3>Mini Chart Portfolio</h3>
+
+                    <p>
+                        A small visualization project combining
+                        frontend design with chart-based UI.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="YOUR_CHART_PROJECT_LINK"
+                        target="_blank"
+                        class="project-link">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SHIKUGI ================= -->
+
+<section class="favorite section">
+
+    <div class="container">
+
+        <div class="favorite-card reveal">
+
+            <div class="favorite-content">
+
+                <span class="favorite-label">
+                    💙 MY FAVOURITE CREATION
+                </span>
+
+                <h2>
+                    Shikugi
+                </h2>
+
+                <p>
+                    One of the creations that is especially close
+                    to my heart. It represents my love for building
+                    something from an idea and turning it into reality.
+                </p>
+
+                <div class="favorite-tags">
+
+                    <span>My Creation</span>
+                    <span>My Learning</span>
+                    <span>My Favourite</span>
+
+                </div>
+
+                <a href="YOUR_SHIKUGI_LINK"
+                    target="_blank"
+                    class="btn white-btn">
+
+                    Explore Shikugi
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
 
             </div>
 
+            <div class="favorite-art">
 
-            <!-- Project 2 -->
-            <div class="project-card">
+                <div class="floating-shape shape-one"></div>
+                <div class="floating-shape shape-two"></div>
 
-                <div class="project-image gradient-two">
-                    <i class="fa-solid fa-robot"></i>
-                </div>
+                <div class="shikugi-card">
 
-                <div class="project-content">
-
-                    <div class="project-title">
-                        <h3>AI Project</h3>
-
-                        <div>
-                            <a href="#">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-
-                            <a href="#">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
+                    <div class="mini-window">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
 
-                    <p>
-                        An Artificial Intelligence project created as part of
-                        my learning journey.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>AI</span>
-                        <span>Learning</span>
+                    <div class="shikugi-logo">
+                        S
                     </div>
 
-                </div>
+                    <strong>
+                        Shikugi
+                    </strong>
 
-            </div>
-
-
-            <!-- Project 3 -->
-            <div class="project-card">
-
-                <div class="project-image gradient-three">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                </div>
-
-                <div class="project-content">
-
-                    <div class="project-title">
-                        <h3>Mobile App</h3>
-
-                        <div>
-                            <a href="#">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-
-                            <a href="#">
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <p>
-                        A mobile application project created while learning
-                        app development concepts.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Mobile</span>
-                        <span>UI</span>
-                        <span>App Dev</span>
-                    </div>
+                    <small>
+                        Created with curiosity
+                    </small>
 
                 </div>
 
@@ -546,13 +1125,179 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= YOUTUBE ================= -->
-    <section class="youtube" id="youtube">
+<!-- ================= CERTIFICATES ================= -->
 
-        <div class="youtube-container">
+<section class="certificates section" id="certificates">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <p class="section-label">
+                LEARNING MILESTONES
+            </p>
+
+            <h2>
+                Certificates &
+                <span>achievements.</span>
+            </h2>
+
+            <p>
+                Every certificate is a reminder of something I learned.
+            </p>
+
+        </div>
+
+
+        <div class="certificate-grid">
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    🐍
+                </div>
+
+                <div>
+
+                    <span>
+                        CERTIFICATION
+                    </span>
+
+                    <h3>
+                        Python Course
+                    </h3>
+
+                    <p>
+                        Programming fundamentals and Python development.
+                    </p>
+
+                </div>
+
+                <a href="YOUR_PYTHON_CERTIFICATE_LINK"
+                    target="_blank"
+                    aria-label="View Python certificate">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    🌐
+                </div>
+
+                <div>
+
+                    <span>
+                        LEARNING
+                    </span>
+
+                    <h3>
+                        Web Development
+                    </h3>
+
+                    <p>
+                        HTML, CSS, JavaScript and frontend development.
+                    </p>
+
+                </div>
+
+                <a href="YOUR_WEB_CERTIFICATE_LINK"
+                    target="_blank"
+                    aria-label="View web certificate">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="certificate-card reveal">
+
+                <div class="certificate-icon">
+                    🤖
+                </div>
+
+                <div>
+
+                    <span>
+                        LEARNING
+                    </span>
+
+                    <h3>
+                        AI Development
+                    </h3>
+
+                    <p>
+                        Exploring artificial intelligence and AI projects.
+                    </p>
+
+                </div>
+
+                <a href="YOUR_AI_CERTIFICATE_LINK"
+                    target="_blank"
+                    aria-label="View AI certificate">
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="certificate-card upcoming-cert reveal">
+
+                <div class="certificate-icon">
+                    🚀
+                </div>
+
+                <div>
+
+                    <span>
+                        COMING SOON
+                    </span>
+
+                    <h3>
+                        Internship Certificate
+                    </h3>
+
+                    <p>
+                        My next professional learning milestone.
+                    </p>
+
+                </div>
+
+                <span class="lock-icon">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= YOUTUBE ================= -->
+
+<section class="youtube section">
+
+    <div class="container">
+
+        <div class="youtube-card reveal">
 
             <div class="youtube-icon">
                 <i class="fa-brands fa-youtube"></i>
@@ -560,231 +1305,228 @@
 
             <div class="youtube-content">
 
-                <p>MY YOUTUBE CHANNEL</p>
+                <span>
+                    MY LEARNING SPACE
+                </span>
 
-                <h2>Priyanka's <span>Study Vlog</span></h2>
+                <h2>
+                    Priyanka's Study Vlog
+                </h2>
 
-                <p class="youtube-description">
-                    I share my study journey, coding journey, Web Development
-                    with AI, Artificial Intelligence, App Development and
-                    everything I learn along the way.
+                <p>
+                    I share my coding journey, learning,
+                    projects and student life through my YouTube channel.
                 </p>
 
-                <div class="youtube-topics">
+            </div>
 
-                    <span>
-                        <i class="fa-solid fa-check"></i>
-                        Study Vlogs
-                    </span>
+            <a href="YOUR_YOUTUBE_LINK"
+                target="_blank"
+                class="youtube-btn">
 
-                    <span>
-                        <i class="fa-solid fa-check"></i>
-                        Coding Journey
-                    </span>
+                Visit Channel
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-                    <span>
-                        <i class="fa-solid fa-check"></i>
-                        AI Learning
-                    </span>
+            </a>
 
-                    <span>
-                        <i class="fa-solid fa-check"></i>
-                        Development
-                    </span>
+        </div>
 
-                </div>
+    </div>
 
-                <!-- Replace # with your YouTube channel link -->
-                <a href="#" class="youtube-btn" target="_blank">
+</section>
+
+
+<!-- ================= INTERNSHIP ================= -->
+
+<section class="internship section">
+
+    <div class="container">
+
+        <div class="internship-box reveal">
+
+            <div class="internship-icon">
+                🚀
+            </div>
+
+            <div>
+
+                <span class="section-label">
+                    NEXT CHAPTER
+                </span>
+
+                <h2>
+                    Something exciting is about to begin.
+                </h2>
+
+                <p>
+                    My internship journey is coming soon.
+                    I'm excited to learn from real-world projects,
+                    gain experience and grow as a developer.
+                </p>
+
+            </div>
+
+            <div class="coming-badge">
+                Coming Soon
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact section" id="contact">
+
+    <div class="container">
+
+        <div class="contact-wrapper reveal">
+
+            <div class="contact-content">
+
+                <p class="section-label">
+                    LET'S CONNECT
+                </p>
+
+                <h2>
+                    Have an idea?
+                    <span>Let's create it.</span>
+                </h2>
+
+                <p>
+                    I'm always interested in learning,
+                    building new things and connecting with
+                    people who love technology.
+                </p>
+
+                <a href="mailto:YOUR_EMAIL@gmail.com"
+                    class="email-link">
+
+                    YOUR_EMAIL@gmail.com
+
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                </a>
+
+            </div>
+
+
+            <div class="social-grid">
+
+                <a href="YOUR_GITHUB_LINK"
+                    target="_blank"
+                    class="social-card">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <div>
+                        <strong>GitHub</strong>
+                        <small>My code & projects</small>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                </a>
+
+
+                <a href="YOUR_LINKEDIN_LINK"
+                    target="_blank"
+                    class="social-card">
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <small>My professional journey</small>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+                </a>
+
+
+                <a href="YOUR_YOUTUBE_LINK"
+                    target="_blank"
+                    class="social-card">
+
                     <i class="fa-brands fa-youtube"></i>
-                    Visit My Channel
+
+                    <div>
+                        <strong>YouTube</strong>
+                        <small>Priyanka's Study Vlog</small>
+                    </div>
+
+                    <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
                 </a>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- ================= CONTACT ================= -->
-    <section class="contact" id="contact">
+<!-- ================= FOOTER ================= -->
 
-        <div class="section-heading">
-            <p>GET IN TOUCH</p>
-            <h2>Let's <span>Connect</span></h2>
-        </div>
+<footer>
 
-        <div class="contact-container">
+    <div class="container footer-container">
 
-            <div class="contact-info">
+        <div class="footer-logo">
 
-                <h3>Have a project or want to connect?</h3>
-
-                <p>
-                    Feel free to contact me. I'm always interested in
-                    learning, collaborating and connecting with other
-                    developers and creators.
-                </p>
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-
-                    <div>
-                        <h4>Email</h4>
-                        <p>your.email@gmail.com</p>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-
-                    <div>
-                        <h4>LinkedIn</h4>
-                        <p>Connect with me professionally</p>
-                    </div>
-
-                </div>
-
-
-                <div class="contact-item">
-
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-youtube"></i>
-                    </div>
-
-                    <div>
-                        <h4>YouTube</h4>
-                        <p>Priyanka's Study Vlog</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- Contact Form -->
-            <form class="contact-form" id="contact-form">
-
-                <div class="input-row">
-
-                    <div class="input-box">
-                        <label>Your Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            placeholder="Enter your name"
-                            required>
-                    </div>
-
-                    <div class="input-box">
-                        <label>Your Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            placeholder="Enter your email"
-                            required>
-                    </div>
-
-                </div>
-
-
-                <div class="input-box">
-                    <label>Subject</label>
-                    <input
-                        type="text"
-                        id="subject"
-                        placeholder="Enter subject"
-                        required>
-                </div>
-
-
-                <div class="input-box">
-                    <label>Message</label>
-
-                    <textarea
-                        id="message"
-                        rows="6"
-                        placeholder="Write your message..."
-                        required></textarea>
-                </div>
-
-
-                <button type="submit" class="btn">
-                    Send Message
-                    <i class="fa-solid fa-paper-plane"></i>
-                </button>
-
-                <p id="form-message"></p>
-
-            </form>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= FOOTER ================= -->
-    <footer class="footer">
-
-        <div>
-            <a href="#home" class="footer-logo">
+            <a href="#home" class="logo">
+                <span class="logo-leaf">✿</span>
                 Priyanka<span>.</span>
             </a>
 
             <p>
-                Learning, Building & Growing Every Day 🚀
+                Learning • Creating • Growing 🌱
             </p>
-        </div>
-
-
-        <div class="footer-social">
-
-            <a href="#">
-                <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
 
         </div>
 
-    </footer>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#journey">Journey</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
 
 
-    <div class="copyright">
-        <p>
-            © <span id="year"></span> Priyanka. Made with
-            <i class="fa-solid fa-heart"></i> and lots of code.
-        </p>
+        <div class="copyright">
+
+            © <span id="year"></span>
+            Priyanka. Made with 💙 & curiosity.
+
+        </div>
+
     </div>
 
-
-    <!-- Scroll To Top -->
-    <button id="scroll-top" aria-label="Scroll to top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
+</footer>
 
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<!-- Back To Top -->
+
+<button id="backToTop" class="back-to-top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
 
 </body>
 </html>
