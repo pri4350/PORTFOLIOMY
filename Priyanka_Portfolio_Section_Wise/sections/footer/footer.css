@@ -1,0 +1,99 @@
+/* ================= FOOTER ================= */
+
+footer {
+
+    background:
+        #123d4b;
+
+    color:
+        white;
+
+    padding:
+        45px 0;
+
+}
+
+.footer-container {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr auto;
+
+    gap:
+        30px;
+
+    align-items:
+        center;
+
+}
+
+.footer-logo .logo {
+
+    color:
+        white;
+
+}
+
+.footer-logo p {
+
+    color:
+        #9bb8c1;
+
+    font-size:
+        11px;
+
+    margin-top:
+        5px;
+
+}
+
+.footer-links {
+
+    display:
+        flex;
+
+    gap:
+        20px;
+
+}
+
+.footer-links a {
+
+    color:
+        #b7ced5;
+
+    font-size:
+        11px;
+
+}
+
+.footer-links a:hover {
+
+    color:
+        white;
+
+}
+
+.copyright {
+
+    grid-column:
+        1 / -1;
+
+    padding-top:
+        20px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.1);
+
+    color:
+        #8eabb4;
+
+    font-size:
+        10px;
+
+    text-align:
+        center;
+
+}

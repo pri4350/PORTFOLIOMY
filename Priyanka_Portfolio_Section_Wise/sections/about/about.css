@@ -1,0 +1,143 @@
+/* ================= ABOUT ================= */
+
+.about {
+
+    background:
+        #f5fbfd;
+
+}
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr 0.9fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+.about-text p {
+
+    color: var(--text);
+
+    margin-bottom: 17px;
+
+    font-size: 16px;
+
+}
+
+.quote-box {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: white;
+
+    border-left:
+        4px solid var(--green);
+
+    border-radius:
+        0 16px 16px 0;
+
+    box-shadow:
+        var(--shadow-small);
+
+}
+
+.quote-box > span {
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 45px;
+
+    color: var(--green);
+
+    line-height: 0.7;
+
+}
+
+.quote-box p {
+
+    margin: 0;
+
+    color: var(--blue-dark);
+
+    font-weight: 600;
+
+}
+
+.about-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+
+}
+
+.stat-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        20px;
+
+    box-shadow:
+        var(--shadow-small);
+
+    transition: 0.3s;
+
+}
+
+.stat-card:hover {
+
+    transform:
+        translateY(-6px);
+
+}
+
+.stat-icon {
+
+    display: block;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+}
+
+.stat-card strong {
+
+    display: block;
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 23px;
+
+    color: var(--blue-dark);
+
+}
+
+.stat-card small {
+
+    color: var(--text-light);
+
+}

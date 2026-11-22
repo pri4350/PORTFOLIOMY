@@ -1,0 +1,187 @@
+/* ================= CONTACT ================= */
+
+.contact {
+
+    background:
+        #edf9fc;
+
+}
+
+.contact-wrapper {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 0.9fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+.contact-content h2 {
+
+    font-family:
+        "Playfair Display";
+
+    font-size:
+        clamp(38px, 5vw, 55px);
+
+    color:
+        var(--blue-dark);
+
+    line-height: 1.15;
+
+}
+
+.contact-content h2 span {
+
+    color:
+        var(--blue);
+
+}
+
+.contact-content > p:not(.section-label) {
+
+    margin:
+        18px 0 20px;
+
+    color:
+        var(--text);
+
+    max-width: 520px;
+
+}
+
+.email-link {
+
+    color:
+        var(--blue);
+
+    font-weight:
+        800;
+
+    font-size:
+        14px;
+
+    display:
+        inline-flex;
+
+    gap: 8px;
+
+}
+
+.social-grid {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+.social-card {
+
+    padding:
+        18px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        42px 1fr 25px;
+
+    gap:
+        13px;
+
+    align-items:
+        center;
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        17px;
+
+    transition:
+        0.3s;
+
+}
+
+.social-card:hover {
+
+    transform:
+        translateX(6px);
+
+    box-shadow:
+        var(--shadow-small);
+
+}
+
+.social-card > i:first-child {
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+    justify-content:
+        center;
+
+    background:
+        var(--blue-light);
+
+    color:
+        var(--blue);
+
+    border-radius:
+        12px;
+
+    font-size:
+        19px;
+
+}
+
+.social-card strong {
+
+    display:
+        block;
+
+    color:
+        var(--blue-dark);
+
+    font-size:
+        13px;
+
+}
+
+.social-card small {
+
+    color:
+        var(--text-light);
+
+    font-size:
+        10px;
+
+}
+
+.social-card .arrow {
+
+    color:
+        var(--text-light);
+
+    font-size:
+        11px;
+
+}

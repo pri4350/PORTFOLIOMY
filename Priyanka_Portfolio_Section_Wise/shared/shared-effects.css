@@ -1,0 +1,93 @@
+/* ================= BACK TO TOP ================= */
+
+.back-to-top {
+
+    position:
+        fixed;
+
+    right:
+        25px;
+
+    bottom:
+        25px;
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    border:
+        none;
+
+    border-radius:
+        14px;
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+    cursor:
+        pointer;
+
+    box-shadow:
+        0 10px 25px rgba(20,90,110,0.2);
+
+    opacity:
+        0;
+
+    visibility:
+        hidden;
+
+    transform:
+        translateY(20px);
+
+    transition:
+        0.3s;
+
+    z-index:
+        900;
+
+}
+
+.back-to-top.show {
+
+    opacity:
+        1;
+
+    visibility:
+        visible;
+
+    transform:
+        translateY(0);
+
+}
+
+
+/* ================= REVEAL ================= */
+
+.reveal {
+
+    opacity:
+        0;
+
+    transform:
+        translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+
+}
+
+.reveal.visible {
+
+    opacity:
+        1;
+
+    transform:
+        translateY(0);
+
+}

@@ -1,0 +1,586 @@
+/* ================= PROJECTS ================= */
+
+.projects {
+
+    background:
+        #f6fbfc;
+
+}
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+.project-card {
+
+    overflow: hidden;
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        25px;
+
+    box-shadow:
+        var(--shadow-small);
+
+    transition: 0.35s;
+
+}
+
+.project-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.project-visual {
+
+    height: 240px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.snake-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #dff5fa,
+            #eaf7ed
+        );
+
+}
+
+.snake-screen {
+
+    width: 210px;
+    height: 150px;
+
+    border-radius: 15px;
+
+    background:
+        #174452;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 40px rgba(15,70,85,0.2);
+
+}
+
+.snake-block {
+
+    width: 16px;
+    height: 16px;
+
+    background:
+        #9ed9a9;
+
+    position: absolute;
+
+    border-radius: 4px;
+
+}
+
+.s1 {
+    left: 55px;
+    top: 60px;
+}
+
+.s2 {
+    left: 73px;
+    top: 60px;
+}
+
+.s3 {
+    left: 91px;
+    top: 60px;
+}
+
+.s4 {
+    left: 109px;
+    top: 60px;
+}
+
+.food {
+
+    position: absolute;
+
+    left: 145px;
+    top: 90px;
+
+}
+
+.todo-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf5ff,
+            #f0faf5
+        );
+
+}
+
+.todo-preview {
+
+    background: white;
+
+    width: 220px;
+
+    padding: 20px;
+
+    border-radius: 17px;
+
+    box-shadow:
+        0 20px 40px rgba(20,90,110,0.1);
+
+}
+
+.todo-title {
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 20px;
+
+    margin-bottom: 13px;
+
+    color: var(--blue-dark);
+
+}
+
+.todo-row {
+
+    font-size: 11px;
+
+    padding: 8px 0;
+
+    color: var(--text);
+
+}
+
+.todo-row span {
+
+    margin-right: 8px;
+
+    color: var(--green);
+
+}
+
+.todo-row.pending span {
+
+    color: var(--blue);
+
+}
+
+.notes-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e7f6f8,
+            #f4f9ed
+        );
+
+}
+
+.notes-preview {
+
+    background: white;
+
+    width: 190px;
+
+    height: 150px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    box-shadow:
+        0 20px 40px rgba(20,90,110,0.1);
+
+}
+
+.note-line {
+
+    height: 6px;
+
+    width: 70%;
+
+    border-radius: 10px;
+
+    background: #dceff3;
+
+    margin-bottom: 9px;
+
+}
+
+.note-line.long {
+    width: 90%;
+}
+
+.note-line.medium {
+    width: 55%;
+}
+
+.note-paper {
+
+    position: absolute;
+
+    bottom: 15px;
+
+    right: 15px;
+
+    font-size: 12px;
+
+    color: var(--blue);
+
+}
+
+.timer-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e9f7f9,
+            #e8f2ed
+        );
+
+}
+
+.timer-preview {
+
+    width: 170px;
+
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background:
+        white;
+
+    box-shadow:
+        0 20px 40px rgba(20,90,110,0.1);
+
+}
+
+.timer-preview span {
+
+    display: block;
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 32px;
+
+    color: var(--blue-dark);
+
+}
+
+.timer-preview small {
+
+    display: block;
+
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    color: var(--text-light);
+
+}
+
+.timer-preview button {
+
+    margin-top: 10px;
+
+    border: none;
+
+    padding: 5px 13px;
+
+    border-radius: 20px;
+
+    background: var(--blue);
+
+    color: white;
+
+    font-size: 9px;
+
+}
+
+.travel-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #dff3fa,
+            #e9f5e8
+        );
+
+}
+
+.travel-preview {
+
+    width: 210px;
+
+    height: 140px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            150deg,
+            #ffffff,
+            #eef9fa
+        );
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 20px 40px rgba(20,90,110,0.1);
+
+}
+
+.travel-preview span {
+
+    font-size: 32px;
+
+}
+
+.travel-preview strong {
+
+    font-family:
+        "Playfair Display";
+
+    color: var(--blue-dark);
+
+    font-size: 16px;
+
+}
+
+.travel-preview small {
+
+    color: var(--text-light);
+
+    font-size: 9px;
+
+}
+
+.chart-visual {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e7f6f8,
+            #edf7eb
+        );
+
+}
+
+.chart-preview {
+
+    width: 220px;
+    height: 145px;
+
+    padding: 20px;
+
+    background: white;
+
+    border-radius: 17px;
+
+    box-shadow:
+        0 20px 40px rgba(20,90,110,0.1);
+
+}
+
+.chart-bars {
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: center;
+
+    gap: 12px;
+
+}
+
+.chart-bars span {
+
+    width: 22px;
+
+    background:
+        linear-gradient(
+            180deg,
+            var(--blue),
+            var(--green)
+        );
+
+    border-radius:
+        7px 7px 2px 2px;
+
+}
+
+.project-number {
+
+    position: absolute;
+
+    top: 18px;
+    right: 20px;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        rgba(255,255,255,0.85);
+
+    backdrop-filter:
+        blur(5px);
+
+    border-radius: 50%;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    color: var(--blue);
+
+}
+
+.project-info {
+
+    padding: 25px;
+
+}
+
+.project-category {
+
+    color:
+        var(--green);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+.project-info h3 {
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 25px;
+
+    color:
+        var(--blue-dark);
+
+    margin: 4px 0 7px;
+
+}
+
+.project-info p {
+
+    color:
+        var(--text);
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+
+}
+
+.project-tech {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-bottom: 18px;
+
+}
+
+.project-tech span {
+
+    padding:
+        4px 9px;
+
+    border-radius: 50px;
+
+    background:
+        var(--blue-light);
+
+    color:
+        var(--blue-dark);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+}
+
+.project-link {
+
+    color:
+        var(--blue);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    display: inline-flex;
+
+    gap: 8px;
+
+    align-items: center;
+
+}
+
+.project-link:hover {
+
+    color:
+        var(--blue-dark);
+
+}

@@ -1,0 +1,157 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background:
+        rgba(255,255,255,0.88);
+
+    backdrop-filter:
+        blur(16px);
+
+    border-bottom:
+        1px solid rgba(220,236,240,0.7);
+
+    transition: 0.3s;
+
+}
+
+.navbar.scrolled {
+
+    box-shadow:
+        0 5px 25px rgba(20,70,90,0.08);
+
+}
+
+.nav-container {
+
+    width: min(1160px, 90%);
+
+    margin: auto;
+
+    min-height: 76px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+.logo {
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    color: var(--blue-dark);
+
+}
+
+.logo span:last-child {
+    color: var(--blue);
+}
+
+.logo-leaf {
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    color: var(--green);
+
+    margin-right: 4px;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+}
+
+.nav-links a {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: var(--text);
+
+    position: relative;
+
+    transition: 0.3s;
+
+}
+
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--blue);
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+
+    color: var(--blue);
+
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+
+    width: 100%;
+
+}
+
+.menu-btn {
+
+    display: none;
+
+    border: none;
+
+    background: var(--blue-light);
+
+    color: var(--blue-dark);
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 19px;
+
+}

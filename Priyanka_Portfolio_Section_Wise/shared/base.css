@@ -1,0 +1,87 @@
+/* ================= ROOT ================= */
+
+:root {
+
+    --blue-dark: #164e63;
+    --blue: #2186a8;
+    --blue-light: #dff4fa;
+    --blue-soft: #eefaff;
+
+    --green: #6b9f75;
+    --green-light: #e8f4ea;
+
+    --cream: #fbfdfb;
+    --white: #ffffff;
+
+    --text-dark: #17323d;
+    --text: #49636d;
+    --text-light: #71868e;
+
+    --border: #dcecf0;
+
+    --shadow:
+        0 20px 50px rgba(26, 93, 116, 0.10);
+
+    --shadow-small:
+        0 10px 25px rgba(26, 93, 116, 0.08);
+
+    --radius: 24px;
+
+}
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: "DM Sans", sans-serif;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fbfeff 0%,
+            #ffffff 45%,
+            #f8fcfa 100%
+        );
+
+    color: var(--text-dark);
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+
+    width: min(1160px, 90%);
+
+    margin: auto;
+
+}

@@ -1,0 +1,167 @@
+/* ================= SKILLS ================= */
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+.skill-card {
+
+    padding: 24px;
+
+    border:
+        1px solid var(--border);
+
+    background: white;
+
+    border-radius: 20px;
+
+    box-shadow:
+        var(--shadow-small);
+
+    transition: 0.3s;
+
+}
+
+.skill-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.skill-icon {
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background:
+        var(--blue-light);
+
+    color:
+        var(--blue);
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+}
+
+.skill-icon.python {
+
+    background:
+        #e8f5ef;
+
+    color:
+        #4f8a64;
+
+}
+
+.skill-icon.ai,
+.skill-icon.app {
+
+    background:
+        #eef1fb;
+
+    font-size: 21px;
+
+}
+
+.skill-icon.backend {
+
+    background:
+        var(--green-light);
+
+}
+
+.skill-card h3 {
+
+    color:
+        var(--blue-dark);
+
+    font-size: 17px;
+
+    margin-bottom: 6px;
+
+}
+
+.skill-card p {
+
+    font-size: 12px;
+
+    color:
+        var(--text-light);
+
+    min-height: 54px;
+
+}
+
+.skill-bar {
+
+    height: 5px;
+
+    background:
+        #edf4f6;
+
+    border-radius: 10px;
+
+    margin-top: 17px;
+
+    overflow: hidden;
+
+}
+
+.skill-bar span {
+
+    display: block;
+
+    height: 100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--blue),
+            var(--green)
+        );
+
+    border-radius: inherit;
+
+}
+
+.learning-label {
+
+    margin-top: 14px;
+
+    display: inline-block;
+
+    padding: 5px 9px;
+
+    border-radius: 50px;
+
+    background:
+        var(--green-light);
+
+    color:
+        #4e7c57;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+}

@@ -1,0 +1,153 @@
+/* ================= CERTIFICATES ================= */
+
+.certificates {
+
+    background:
+        #f7fcfb;
+
+}
+
+.certificate-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+}
+
+.certificate-card {
+
+    padding:
+        22px;
+
+    display: grid;
+
+    grid-template-columns:
+        58px 1fr 35px;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        20px;
+
+    box-shadow:
+        var(--shadow-small);
+
+}
+
+.certificate-icon {
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        var(--blue-light);
+
+    border-radius:
+        15px;
+
+    font-size: 25px;
+
+}
+
+.certificate-card span {
+
+    font-size: 9px;
+
+    color:
+        var(--green);
+
+    letter-spacing: 1.5px;
+
+    font-weight: 800;
+
+}
+
+.certificate-card h3 {
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 19px;
+
+    color:
+        var(--blue-dark);
+
+}
+
+.certificate-card p {
+
+    color:
+        var(--text-light);
+
+    font-size: 11px;
+
+}
+
+.certificate-card > a {
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background:
+        var(--blue-light);
+
+    color:
+        var(--blue);
+
+    transition: 0.3s;
+
+}
+
+.certificate-card > a:hover {
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+}
+
+.lock-icon {
+
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background:
+        #f0f3f3;
+
+    color:
+        #9aa9ad;
+
+}

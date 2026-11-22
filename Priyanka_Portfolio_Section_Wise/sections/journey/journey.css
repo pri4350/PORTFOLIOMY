@@ -1,0 +1,141 @@
+/* ================= JOURNEY ================= */
+
+.timeline {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    position: relative;
+
+}
+
+.timeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 34px;
+
+    top: 15px;
+    bottom: 15px;
+
+    width: 2px;
+
+    background:
+        linear-gradient(
+            var(--blue-light),
+            var(--green-light)
+        );
+
+}
+
+.timeline-item {
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        70px 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 35px;
+
+}
+
+.timeline-dot {
+
+    width: 68px;
+    height: 68px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+
+    border:
+        2px solid var(--blue-light);
+
+    color: var(--blue);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    position: relative;
+
+    z-index: 2;
+
+    box-shadow:
+        0 7px 20px rgba(20,90,110,0.08);
+
+}
+
+.timeline-content {
+
+    padding: 25px;
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 20px;
+
+    box-shadow:
+        var(--shadow-small);
+
+}
+
+.timeline-tag {
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: var(--blue);
+
+}
+
+.timeline-content h3 {
+
+    font-family:
+        "Playfair Display";
+
+    font-size: 24px;
+
+    margin: 4px 0 8px;
+
+    color: var(--blue-dark);
+
+}
+
+.timeline-content p {
+
+    color: var(--text);
+
+    font-size: 14px;
+
+}
+
+.timeline-item.upcoming .timeline-dot {
+
+    background:
+        var(--green-light);
+
+    border-color:
+        #cbe3cf;
+
+    color:
+        #4f8059;
+
+}
